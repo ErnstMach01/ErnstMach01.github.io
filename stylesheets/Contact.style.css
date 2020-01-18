@@ -1,0 +1,92 @@
+/*.page-footer*/
+/*{*/
+/*    padding-top: 50px;*/
+/*    padding-left: 5%;*/
+/*    padding-right: 5%;*/
+/*}*/
+
+.Connect{
+    text-align: left;
+    padding-left:50px;
+    padding-bottom: 20px;
+}
+
+/*#Contact{*/
+/*    padding-top: 40px;*/
+/*}*/
+
+
+.Social-Logo{
+    font-size: 50px;
+    /*text-align: right;*/
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .Connect{
+        text-align: center;
+    }
+}
+
+
+.End-Icons a {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+    /*margin: 0 10px;*/
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.End-Icons a .icon {
+    position: relative;
+    color: #fff;
+    transition: .5s;
+    z-index: 3;
+}
+
+.End-Icons a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.End-Icons a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #393bff;*/
+    transition: .5s;
+    z-index: 2;
+}
+
+.End-Icons.Mail a:before{
+    background: #0066FF;
+}
+
+.End-Icons.Git a:before {
+    background:mediumpurple;
+}
+
+.End-Icons.Linked a:before{
+    background:#0077B5;
+}
+
+.End-Icons a:hover:before {
+    top: 0;
+}
+
+.End{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
